@@ -293,9 +293,9 @@ if need_install phantomjs ChangeLog Version 2.1.0 test ; then
   elif [[ $OSTYPE == darwin* ]] ; then
     download_and_unpack \
       $CB_ARCHIVE_LIB_URL/phantomjs-2.1.1-macosx.zip \
-      "$RUNTIME_HOME/phantomjs"
+      "$RUNTIME_HOME"
     rm -rf "$RUNTIME_HOME/phantomjs"
-    mv "$RUNTIME_HOME/phantomjs-2.1.1-macos" "$RUNTIME_HOME/phantomjs"
+    mv "$RUNTIME_HOME/phantomjs-2.1.1-macosx" "$RUNTIME_HOME/phantomjs"
   else
     echo "Target OS '$OSTYPE' must start with 'linux' or 'darwin'."
     exit -1
